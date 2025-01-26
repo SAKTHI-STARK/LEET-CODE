@@ -1,9 +1,14 @@
-def two_sum(arr,tar):
-    print(arr)
-    for i in arr:
-        for j in range(i+1,len(arr)):
-            if tar==arr[i]+arr[j]:
-                return i,j
-input_array=[1,2,3,4]
-target_value=6
-print(two_sum(input_array,target_value))
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in nums:
+            for j in range(i+1,len(nums)):
+                if target==nums[i]+nums[j]:
+                    print(i,j)
+
+    
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         for i,x in enumerate(nums):
+#             for j in range(i+1,len(nums)):
+#                 if target==nums[i]+nums[j]:
+#                     return[i,j]
